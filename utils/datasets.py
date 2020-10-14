@@ -37,7 +37,7 @@ def random_resize(images, min_size=288, max_size=448):
 
 
 class ImageFolder(Dataset):
-    def __init__(self, folder_path, img_size=416):
+    def __init__(self, folder_path, img_size=608):
         self.files = sorted(glob.glob("%s/*.*" % folder_path))
         self.img_size = img_size
 
@@ -66,7 +66,7 @@ class ListDataset(Dataset):
             for path in self.img_files
         ]
         self.img_size = img_size
-        self.max_objects = 100
+        self.max_objects = 300
         self.augment = augment
         self.multiscale = multiscale
         self.normalized_labels = normalized_labels

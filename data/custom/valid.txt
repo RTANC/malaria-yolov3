@@ -245,3 +245,4 @@ data/custom/images/po-test-0000000066.jpg
 data/custom/images/po-test-0000000067.jpg
 data/custom/images/po-test-0000000068.jpg
 data/custom/images/po-test-0000000069.jpg
+data/custom/images/po-test-0000000070.jpg
