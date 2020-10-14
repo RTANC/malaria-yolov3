@@ -74,7 +74,7 @@ if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     data_config = parse_data_config(opt.data_config)
-    valid_path = data_config["test"]
+    valid_path = data_config["valid"]
     class_names = load_classes(data_config["names"])
 
     # Initiate model
